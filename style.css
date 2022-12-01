@@ -1,0 +1,11 @@
+td {
+    cursor: pointer;
+}
+
+td:hover {
+    background: #555;
+}
+
+table {
+    border-collapse: separate;
+}
