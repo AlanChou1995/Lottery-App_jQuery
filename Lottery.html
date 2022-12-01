@@ -127,8 +127,8 @@
 <script>
     let userChooseNumber = new Set();
     let userNumber = [];
+    let result = [];
     const random = () => {
-        let result = [];
         for (let i = 1; i <= 6; i++) {
             let x = Math.floor(Math.random() * 49) + 1;
             if (result.includes(x.toString())) {
@@ -159,6 +159,7 @@
             })
         }
         console.log(userChooseNumber);
+        console.log(result.length)
     })
 
     $('#done').click(function () {
@@ -170,18 +171,35 @@
             })
             $('#userChoose').text(`自選號碼：${userNumber.sort((a, b) => a - b).join(' , ')}`)
         }
-    })
-
-    $('#reset').click(function () {
-        userChooseNumber;
-        userNumber = [];
-        console.log(userChooseNumber);
         console.log(userNumber)
     })
 
     $('#bet').click(function () {
-        $('#betNumber').text(`開獎號碼：${random()}`)
-        console.log(userChooseNumber)
-        console.log(userNumber)
+        if (userChooseNumber.size < 6) {
+            alert('請先選取號碼下注')
+        } else {
+            $('#betNumber').text(`開獎號碼：${random()}`)
+            console.log(result);
+            result = [];
+
+        }
+
     })
+
+    // $('#reset').click(function () {
+    //     userChooseNumber;
+    //     userNumber = [];
+    //     console.log(userChooseNumber);
+    //     console.log(userNumber)
+    // })
+
 </script>
+
+
+<!-- 
+    1.下注後清空 userNumber && table數字
+    2.隨機選好功能
+    3.重選清空所有功能
+    4.兌獎後清空 userNumber && userChooseNumber && result && table數字 
+      並 return 比對後中幾組數字及獲得幾獎 
+-->
