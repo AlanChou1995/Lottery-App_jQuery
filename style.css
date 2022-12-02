@@ -1,11 +1,14 @@
 td {
     cursor: pointer;
 }
+th,td {
+    border-radius: 8px;
+}
 
 td:hover {
     background: #555;
 }
 
 table {
-    border-collapse: separate;
+    border-collapse: separate;;
 }
