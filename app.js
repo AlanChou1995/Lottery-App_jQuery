@@ -62,7 +62,7 @@ $(() => {
             return alert(`請點選重選`);
         }
         if (userChooseNumber.size < 6) {
-            alert(`至少選取六位數字`)
+            alert(`需選取六位數字`)
         } else {
             userChooseNumber.forEach((value) => {
                 userNumber.push(value);
