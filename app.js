@@ -106,7 +106,7 @@ $(() => {
                 }
             })
             userNumber = [];
-            userChooseNumber = new Set();
+            userChooseNumber.clear();
             result = [];
             doneStatus = true;
             gameStatus = true;
@@ -120,7 +120,7 @@ $(() => {
     })
 
     $('#reset').click(function () {
-        userChooseNumber = new Set();
+        userChooseNumber.clear();
         userNumber = [];
         result = [];
         doneStatus = false;
@@ -147,7 +147,7 @@ $(() => {
             })
             doneStatus = true;
             gameStatus = false
-            userChooseNumber = new Set();
+            userChooseNumber.clear();
         }
 
         //test
