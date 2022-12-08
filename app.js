@@ -90,7 +90,7 @@ $(() => {
             return alert(`請點選 重選 重新開始遊戲`)
         }
         else if (doneStatus === false) {
-            return alert(`請先點選下注`)
+            return alert(`請先點選 下注 或 隨機`)
         }
         else {
             $('#betNumber').text(`開獎號碼：
