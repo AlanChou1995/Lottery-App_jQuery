@@ -59,7 +59,7 @@ $(() => {
 
     $('#done').click(function () {
         if (doneStatus) {
-            return alert(`請點選重選`);
+            return alert(`請點選 重選 或 兌獎`);
         }
         if (userChooseNumber.size < 6) {
             alert(`需選取六位數字`)
@@ -87,7 +87,7 @@ $(() => {
 
     $('#bet').click(function () {
         if (gameStatus) {
-            return alert(`請重新開始`)
+            return alert(`請點選 重選 重新開始遊戲`)
         }
         else if (doneStatus === false) {
             return alert(`請先點選下注`)
@@ -137,7 +137,7 @@ $(() => {
 
     $('#autoRandom').click(function () {
         if (doneStatus !== false) {
-            return alert(`請點選重選`)
+            return alert(`請點選 重選 或 兌獎`)
         } else {
             $('#autoChoose').text(`電腦選號：
             ${randomUserNumber()}`)
