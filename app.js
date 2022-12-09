@@ -107,7 +107,7 @@ $(() => {
                 if (result.includes(item)) {
                     userGetNumber.push(item);
                 }
-                $('#repeatNumber').text(`中獎號碼：${userGetNumber.sort((a, b) => a - b).join(' , ')}`)
+                $('#repeatNumber').text(`中獎號碼： ${userGetNumber.sort((a, b) => a - b).join(' , ')}`)
             })
             userNumber = [];
             userChooseNumber.clear();
