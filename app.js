@@ -98,12 +98,12 @@ $(() => {
             $('td').css({
                 background: '',
             })
+            let userGetNumber = [];
             userNumber.map((item) => {
                 if (result.includes(item)) {
-                    $('#repeatNumber').text(`
-                        中獎號碼：${item}
-                    `)
+                    userGetNumber.push(item);
                 }
+                $('#repeatNumber').text(`中獎號碼：${userGetNumber.sort((a, b) => a - b).join(' , ')}`)
             })
             userNumber = [];
             userChooseNumber.clear();
