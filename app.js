@@ -54,7 +54,9 @@ $(() => {
         }
 
         //test
+        /*
         console.log(userChooseNumber)
+        */
     })
 
     $('#done').click(function () {
@@ -78,11 +80,13 @@ $(() => {
         }
 
         //test
+        /*
         console.log(`doneStatus = ${doneStatus}`)
         console.log(`gameStatus = ${gameStatus}`)
         console.log(`result = ${result}`);
         console.log(`userNumber = ${userNumber}`)
         console.log(`userChooseNumber = ${userChooseNumber.size}`)
+        */
     })
 
     $('#bet').click(function () {
@@ -113,10 +117,12 @@ $(() => {
         }
 
         //test
+        /*
         console.log(`doneStatus = ${doneStatus}`)
         console.log(`gameStatus = ${gameStatus}`)
         console.log(`result = ${result}`);
         console.log(`userNumber = ${userNumber}`)
+        */
     })
 
     $('#reset').click(function () {
@@ -151,9 +157,11 @@ $(() => {
         }
 
         //test
+        /*
         console.log(`doneStatus = ${doneStatus}`)
         console.log(`gameStatus = ${gameStatus}`)
         console.log(`result = ${result}`);
         console.log(`userNumber = ${userNumber}`)
+        */
     })
 })
